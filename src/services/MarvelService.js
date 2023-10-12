@@ -10,25 +10,40 @@ const useMarvelService = () =>{
     
     const getNewComics = async (_offset = 2) => {
         const res = await request(`${_apibase}/comics?format=comic&formatType=comic&orderBy=issueNumber&limit=8&offset=${_offset}&${_apikey}`)
+<<<<<<< HEAD
         // console.log(res)
+=======
+        console.log(res)
+>>>>>>> 627c47890f11b206f68879c62042bb51c778ba25
         return res.data.results.map(_transformComic)
 
     }
     const getNewComic = async (id) => {
+<<<<<<< HEAD
 		const res = await request(`${_apibase}/comics/${id}?${_apikey}`);
+=======
+		const res = await request(`${_apibase}comics/${id}?${_apikey}`);
+>>>>>>> 627c47890f11b206f68879c62042bb51c778ba25
 		return _transformComic(res.data.results[0]);
 	};
     const getAllCharacters = async (offset = _baseOffset) =>
     {
         const res = await request(`${_apibase}/characters?limit=9&offset=${offset}&${_apikey}`);
+<<<<<<< HEAD
         // console.log(res)
+=======
+        console.log(res)
+>>>>>>> 627c47890f11b206f68879c62042bb51c778ba25
         return res.data.results.map(_transformCharacter);
     }
 
    const  getCharacter = async (id) =>
     {
         const res = await request(`${_apibase}/characters/${id}?${_apikey}`);
+<<<<<<< HEAD
         // console.log(res)
+=======
+>>>>>>> 627c47890f11b206f68879c62042bb51c778ba25
         return _transformCharacter(res.data.results[0]);
     }
 

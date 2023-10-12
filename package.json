@@ -11,7 +11,10 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.16.0",
     "react-scripts": "^5.0.1",
+<<<<<<< HEAD
     "react-transition-group": "^4.4.5",
+=======
+>>>>>>> 627c47890f11b206f68879c62042bb51c778ba25
     "web-vitals": "^1.0.1"
   },
   "homepage": "https://myusername.github.io",
