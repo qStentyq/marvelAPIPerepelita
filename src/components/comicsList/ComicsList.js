@@ -16,6 +16,7 @@ const ComicsList = () => {
 
     useEffect(() => {
         onLoadMore(offset, true)
+        // eslint-disable-next-line
     },[])
 
     const OnLoadComics = (newComics) => {

@@ -4,10 +4,7 @@ import useMarvelService from '../../services/MarvelService';
 import Spinner from '../spinner/spinner';
 import ErrorMessage from '../errorModal/errorModal';
 import Skeleton from '../skeleton/Skeleton'
-<<<<<<< HEAD
 import { Link } from 'react-router-dom';
-=======
->>>>>>> 627c47890f11b206f68879c62042bb51c778ba25
 
 
 const CharInfo = ({charId}) => {
@@ -88,16 +85,10 @@ const View = ({char}) => {
                             {
                                 return null;
                             }
-<<<<<<< HEAD
                             const link = `/comics/${parseInt(item.resourceURI.slice(43))}`
                             return(
                                 <li key = {i} className="char__comics-item">
                                     <Link to={link}>{item.name}</Link>
-=======
-                            return(
-                                <li key = {i} className="char__comics-item">
-                                {item.name}
->>>>>>> 627c47890f11b206f68879c62042bb51c778ba25
                                 </li>
                             )
                         })
