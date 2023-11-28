@@ -32,7 +32,6 @@
             box-shadow: 0 5px 20px $main-color;
             transform: translateY(-8px);
         }
-<<<<<<< HEAD
         &-enter {
             opacity: 0;
         }
@@ -47,8 +46,6 @@
             opacity: 0;
             transition: opacity 500ms ease-in;
         }
-=======
->>>>>>> 627c47890f11b206f68879c62042bb51c778ba25
     }
     &__name {
         font-weight: bold;
@@ -56,9 +53,5 @@
         line-height: 29px;
         text-transform: uppercase;
         color: #fff;
-<<<<<<< HEAD
-    } 
-=======
     }
->>>>>>> 627c47890f11b206f68879c62042bb51c778ba25
 }

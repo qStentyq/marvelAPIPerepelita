@@ -1,15 +1,14 @@
 import RandomChar from "../randomChar/RandomChar";
 import CharList from "../charList/CharList";
 import CharInfo from "../charInfo/CharInfo";
+import CharSearchForm from "../charSearchForm/charSearchForm";
 import ErrorBoundary from "../errorBoundary/ErrorBoundary";
 import decoration from '../../resources/img/vision.png';
 import { useState } from "react";
 
-<<<<<<< HEAD
-const MainPage = () => {
-=======
+import { Helmet } from "react-helmet";
+
 const Mainpage = () => {
->>>>>>> 627c47890f11b206f68879c62042bb51c778ba25
 
     const [selectedChar, setSelectedChar] = useState(null)
 
@@ -20,22 +19,32 @@ const Mainpage = () => {
 
     return (
         <>
+            <Helmet>
+                <meta
+                name="description"
+                content='Main page of API marvel app'
+                />
+                <title>Information Marvel Portal</title>
+            </Helmet>
             <ErrorBoundary>
                 <RandomChar/>
             </ErrorBoundary>
             <div className="char__content">
-                <CharList onCharSelected = {onCharSelected}/>
                 <ErrorBoundary>
-                    <CharInfo charId = {selectedChar}/>
-                </ErrorBoundary>     
+                    <CharList onCharSelected={onCharSelected}/>
+                </ErrorBoundary>
+                <div>
+                    <ErrorBoundary>
+                        <CharInfo charId = {selectedChar}/>
+                    </ErrorBoundary>
+                    <ErrorBoundary>
+                        <CharSearchForm/>
+                    </ErrorBoundary>
+                </div>
             </div>
             <img className="bg-decoration" src={decoration} alt="vision"/>
         </>
     )
 }
 
-<<<<<<< HEAD
-export default MainPage
-=======
 export default Mainpage
->>>>>>> 627c47890f11b206f68879c62042bb51c778ba25

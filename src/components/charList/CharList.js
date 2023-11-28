@@ -20,7 +20,7 @@ const CharList = (props) =>  {
     useEffect(() => {
         getAllCharacters(offset)
         .then(onRandomHeroList)
-       
+       // eslint-disable-next-line
     },[])
 
 
